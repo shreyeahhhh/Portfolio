@@ -1,0 +1,21 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+#
+# This site is fully static (no build step, no backend), so it's deployed
+# as a Render Static Site: free, served off Render's CDN, zero servers to
+# manage. When you connect this repo on Render as a Blueprint, this file
+# configures it automatically.
+#
+# Prefer clicking through the dashboard instead? Create a new
+# "Static Site", point it at this repo, leave the build command empty,
+# and set the publish directory to "." — that's the whole setup.
+services:
+  - type: web
+    name: shreya-portfolio
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
