@@ -310,23 +310,6 @@
   }
 
   /* ---------------------------------------------------------------------
-     Side-quest horizontal scroller
-  --------------------------------------------------------------------- */
-  function initSideQuest() {
-    const track = document.getElementById("sqTrack");
-    const left = document.getElementById("sqLeft");
-    const right = document.getElementById("sqRight");
-    if (!track) return;
-    const scrollByCard = (dir) => {
-      const card = track.querySelector(".sq-card");
-      const distance = card ? card.getBoundingClientRect().width + 20 : 300;
-      track.scrollBy({ left: dir * distance, behavior: "smooth" });
-    };
-    left && left.addEventListener("click", () => scrollByCard(-1));
-    right && right.addEventListener("click", () => scrollByCard(1));
-  }
-
-  /* ---------------------------------------------------------------------
      Copy email
   --------------------------------------------------------------------- */
   function initEmailCopy() {
@@ -379,7 +362,6 @@
     initReveal();
     initCounters();
     initMagnetic();
-    initSideQuest();
     initEmailCopy();
     initFooter();
   });

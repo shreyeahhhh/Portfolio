@@ -424,31 +424,6 @@ section{ position:relative; padding: clamp(80px,10vw,140px) clamp(20px,5vw,64px)
 .bento__link-row{ display:flex; gap:1.4rem; align-items:center; }
 .bento__link--ghost{ opacity:.75; text-decoration:underline; text-underline-offset:3px; }
 
-/* ---------- Side quests (horizontal scroll) ---------- */
-.sidequest{ margin-top: clamp(3rem,6vw,5rem); }
-.sidequest__head{ display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:1.4rem; flex-wrap:wrap; gap:1rem; }
-.sidequest__head h3{ font-family:var(--font-display); font-size:clamp(1.4rem,2.6vw,2rem); font-weight:600; }
-.sidequest__head h3 span{ color:var(--ink-faint); font-size:.7em; font-family:var(--font-body); font-weight:500; }
-.sidequest__nav{ display:flex; gap:.6rem; }
-.sidequest__arrow{ width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition: transform .3s var(--ease-clay); }
-.sidequest__arrow:hover{ transform:translateY(-3px); }
-.sidequest__arrow:active{ transform:scale(.92); }
-.sidequest__track{
-  display:flex; gap:1.3rem; overflow-x:auto; scroll-snap-type:x proximity; padding-bottom:1rem;
-  scrollbar-width:none;
-}
-.sidequest__track::-webkit-scrollbar{ display:none; }
-.sq-card{
-  flex:0 0 clamp(260px,32vw,340px); scroll-snap-align:start; padding:1.8rem;
-  display:flex; flex-direction:column; gap:.7rem; transition: transform .4s var(--ease-clay);
-}
-.sq-card:hover{ transform: translateY(-6px) rotate(1deg); }
-.sq-card__emoji{ font-size:1.8rem; }
-.sq-card h4{ font-family:var(--font-display); font-size:1.15rem; font-weight:600; }
-.sq-card p{ color:var(--ink-soft); font-size:.92rem; line-height:1.5; flex:1; }
-.sq-card--cta{ background:var(--yellow-soft); align-items:flex-start; }
-.sq-card--cta .btn{ margin-top:.4rem; }
-
 /* ==========================================================================
    ACTIVITIES
    ========================================================================== */
