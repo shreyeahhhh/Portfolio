@@ -1,9 +1,5 @@
 # Shreya Merin Mathew — Portfolio
 
-A single-page portfolio site. Claymorphism UI, big display type, a bento-grid
-project showcase pulled from [github.com/shreyeahhhh](https://github.com/shreyeahhhh),
-and no build step — just HTML, CSS and vanilla JS.
-
 ## Structure
 
 ```
